@@ -5,29 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <title>Scorecard</title>
 </head>
 <body>
-    <div class="container">
-        <div class="card">
-            <div class="top"><h1>HOME</h1></div>
-            <div class="score"><p id="home-sc">0</p></div>
-            <div class="buttons">
-                <button id="inc-one" onclick="hmIncOne()">+1</button>
-                <button id="inc-two" onclick="hmIncTwo()">+2</button>
-                <button id="inc-three" onclick="hmIncThree()">+3</button>
+    <div class="box">
+        <div class="container">
+            <div class="card1">
+                <div class="top"><h1>HOME</h1></div>
+                <div class="score"><p id="home-sc">0</p></div>
+                <div class="buttons">
+                    <button id="inc-one" onclick="hmIncOne()">+1</button>
+                    <button id="inc-two" onclick="hmIncTwo()">+2</button>
+                    <button id="inc-three" onclick="hmIncThree()">+3</button>
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <div class="top"><h1>AWAY</h1></div>
-            <div class="score"><p id="away-sc">0</p></div>
-            <div class="buttons">
-                <button id="inc-one" onclick="awIncOne()">+1</button>
-                <button id="inc-two" onclick="awIncTwo()">+2</button>
-                <button id="inc-three" onclick="awIncThree()">+3</button>
+            <div class="card2">
+                <div class="top"><h1>AWAY</h1></div>
+                <div class="score"><p id="away-sc">0</p></div>
+                <div class="buttons">
+                    <button id="inc-one" onclick="awIncOne()">+1</button>
+                    <button id="inc-two" onclick="awIncTwo()">+2</button>
+                    <button id="inc-three" onclick="awIncThree()">+3</button>
+                </div>
             </div>
+            
         </div>
-        
+        <div class="reset">
+            <button id="reset" onclick="reset()">RESET</button>
+        </div>
         
     </div>
     <script src="index.js"></script>
